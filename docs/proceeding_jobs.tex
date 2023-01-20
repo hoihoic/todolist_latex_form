@@ -1,0 +1,18 @@
+\documentclass[oneside]{book}
+\input{./docs/pjobs_preamble}
+\begin{document}
+\onehalfspacing
+\frontmatter
+\tableofcontents
+\mainmatter
+\input{./docs/job_example}
+\backmatter
+\addcontentsline{toc}{chapter}{pdf paths}
+\addcontentsline{toc}{section}{proceedings: }
+\addcontentsline{toc}{section}{backlogs:}
+\bibliographystyle{plain}
+\bibliography{./references/references}
+%\nocite{*}
+\nocite{jang2016categorical}
+\end{document}
+
