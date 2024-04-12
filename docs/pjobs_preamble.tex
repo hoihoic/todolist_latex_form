@@ -1,5 +1,6 @@
 \usepackage{kotex}
 \usepackage{dhucs-nanumfont}
+\usepackage{array}
 \usepackage[a4paper]{geometry}
 \usepackage{hyperref}
 \hypersetup{pdfauthor={Hoyong Jang},
@@ -9,8 +10,10 @@
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{setspace}
+\usepackage{placeins}
 \usepackage{booktabs}
 \usepackage{cleveref}
+\usepackage{url}
 \newcommand{\head}[1]{\textbf{#1}}
 \renewcommand{\contentsname}{\Large{\today \ 장호용}}
 \renewcommand{\chaptername}{Task}
@@ -18,5 +21,13 @@
 \renewcommand{\cftaftertoctitleskip}{1em}
 
 \newcommand{\mathrv}[1]{\mathbf{#1}}
+\DeclareMathOperator{\Expect}{\mathbb{E}}
+\DeclareMathOperator*{\argmin}{\arg\min}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\newcommand{\txtus}{\textunderscore\hspace{0pt}}
 \setcounter{tocdepth}{1}
 \setlength{\parskip}{0.5em}
